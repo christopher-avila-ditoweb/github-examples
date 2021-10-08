@@ -9,3 +9,7 @@ def hello_world():
 @app.route("/")
 def page_one():
     return "<p>page 1</p>"
+
+@app.route("/")
+def page_two():
+    return "<p>page 2</p>"
