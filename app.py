@@ -13,4 +13,4 @@ def hello():
 
 @app.route("/world")
 def world():
-    return "<p>World!</p>"
+    return render_template("world.html")
