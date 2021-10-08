@@ -17,4 +17,4 @@ def page_two():
 
 @app.route("/three")
 def page_three():
-    return "<p>page 3</p>"
+    return render_template("three.html")
