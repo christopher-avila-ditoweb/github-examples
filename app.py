@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -6,10 +7,14 @@ app = Flask(__name__)
 def hello_world():
     return "<p>Hello, World!</p>"
 
-@app.route("/")
+@app.route("/one")
 def page_one():
-    return "<p>page 1</p>"
+    return render_template("one.html")
 
-@app.route("/")
+@app.route("/two")
 def page_two():
     return "<p>page 2</p>"
+
+@app.route("/three")
+def page_three():
+    return "<p>page 3</p>"
